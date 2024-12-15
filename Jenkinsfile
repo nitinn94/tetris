@@ -16,7 +16,7 @@ pipeline {
     }
      
 
-    agent {label 'docker'}
+    agent {label 'slave-1'}
     stages {
         stage('Git Checkout') {
             steps {
