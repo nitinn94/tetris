@@ -41,7 +41,7 @@ pipeline {
                 branch 'development'
             }
             steps {
-                kubernetesEKSHelmDeploy('$dockerImage', '$dockerTag', '$repoName', 'awsCred', 'us-east-1', 'nitin', 'dev')
+                kubernetesEKSHelmDeploy('$dockerImage', '$dockerTag', '$repoName', 'awsCred', 'us-east-1', 'test', 'dev')
             }
         }
 
